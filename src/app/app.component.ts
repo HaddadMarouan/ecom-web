@@ -7,7 +7,9 @@ import {CatalogueService} from "./catalogue.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  private categories;
+  categories:any;
+
+
 
   constructor(private catService:CatalogueService) {}
 

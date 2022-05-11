@@ -8,7 +8,7 @@ export class CatalogueService {
   public host:string="http://localhost:8080"
 
   constructor(private http : HttpClient) { }
-  public getResource(url){
+  public getResource(url:any){
     return this.http.get(this.host+url);
   }
 
